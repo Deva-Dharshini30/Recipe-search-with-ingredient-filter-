@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masala Box — Recipe Finder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="spice-row">🌶️ 🌿 🧄 🫚 🌾</div>
+  <div class="eyebrow">Cook with what you have</div>
+  <h1>Masala <span>Box</span></h1>
+  <p>Search thousands of recipes by a single ingredient sitting in your kitchen right now.</p>
+</header>
+
+<div class="search-wrap">
+  <div class="search-card">
+    <div class="search-bar">
+      <input type="text" id="ingredient-input" placeholder="Try potato, chicken, paneer...">
+      <button id="search-btn">Search</button>
+    </div>
+    <div class="chip-label">Popular ingredients</div>
+    <div class="chips" id="chips"></div>
+  </div>
+</div>
+
+<div id="status"></div>
+<div class="recipe-grid" id="recipe-grid"></div>
+
+<footer>Recipe data powered by TheMealDB</footer>
+
+<!-- Modal -->
+<div id="modal-overlay">
+  <div id="modal-box">
+    <button id="close-modal">&times;</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
